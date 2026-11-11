@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0xLorance::Call</title>
+<meta name="description" content="Lorance Call의 프로젝트 지도 · A map of Lorance Call's projects">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf7;
+  --panel: #ffffff;
+  --text: #1f2328;
+  --muted: #667085;
+  --line: #d0d5dd;
+  --accent: #b5452b;
+  --link: #1f5fbf;
+  --tag-bg: #f0eee8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14161a;
+    --panel: #1b1e23;
+    --text: #e6e8eb;
+    --muted: #98a2b3;
+    --line: #3a404a;
+    --accent: #e0805f;
+    --link: #7fb0ff;
+    --tag-bg: #262a31;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14161a; --panel: #1b1e23; --text: #e6e8eb; --muted: #98a2b3;
+  --line: #3a404a; --accent: #e0805f; --link: #7fb0ff; --tag-bg: #262a31;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 "Noto Sans KR", system-ui, sans-serif;
+}
+main { max-width: 820px; margin: 0 auto; padding: 48px 16px 64px; }
+header h1 {
+  font: 600 1.9rem/1.2 "JetBrains Mono", ui-monospace, monospace;
+  margin: 0 0 8px;
+}
+header h1 .sep { color: var(--accent); }
+header p { margin: 4px 0; color: var(--muted); }
+header .links { margin-top: 12px; font-size: .95rem; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.en { color: var(--muted); font-size: .88em; }
+
+/* wiki tree */
+.tree { margin-top: 36px; }
+.tree ul { list-style: none; margin: 0; padding-left: 22px; position: relative; }
+.tree > ul { padding-left: 0; }
+.tree li { position: relative; padding: 6px 0 6px 18px; }
+.tree > ul > li { padding-left: 0; }
+.tree ul ul li::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+  border-left: 1px solid var(--line);
+}
+.tree ul ul li:last-child::before { bottom: auto; height: 20px; }
+.tree ul ul li::after {
+  content: ""; position: absolute; left: 0; top: 20px; width: 12px;
+  border-top: 1px solid var(--line);
+}
+.node { display: block; }
+.name { font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 600; }
+.desc { display: block; font-size: .95rem; }
+.group > .node .name { font-size: 1.15rem; color: var(--accent); }
+.group { margin-bottom: 18px; }
+details > summary { cursor: pointer; list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary .name::before { content: "▾ "; color: var(--muted); }
+details:not([open]) > summary .name::before { content: "▸ "; }
+.tag {
+  display: inline-block; margin-left: 6px; padding: 0 7px;
+  border-radius: 10px; background: var(--tag-bg); color: var(--muted);
+  font-size: .75rem; vertical-align: 2px;
+}
+footer { margin-top: 48px; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>0xLorance<span class="sep">::</span>Call</h1>
+  <p>뭐든 만져 보는 컴퓨터 덕후의 취미 작업 지도입니다. Mac, Linux, Windows, 전자잉크 태블릿, 홈서버, 그리고 요즘은 LLM 에이전트.</p>
+  <p class="en">A tinkerer's map of hobby projects: Mac, Linux, Windows, e-paper tablets, home servers, and lately LLM agents.</p>
+  <p class="links"><a href="https://github.com/lorancecall">GitHub @lorancecall</a> · <a href="https://dureh-gb.github.io">두레공방</a></p>
+</header>
+
+<nav class="tree" aria-label="Projects">
+<ul>
+
+  <li class="group">
+    <details open>
+      <summary class="node"><span class="name">두레공방 Dureh Gong-bang</span>
+        <span class="desc">내 컴퓨터들을 위한 원격 작업 환경을 짓는 작은 공방. 에이전트 자리도 조금 있습니다. 큰 프로젝트는 여기서. · <a href="https://dureh-gb.github.io">dureh-gb.github.io</a> · <a href="https://github.com/dureh-gb">github.com/dureh-gb</a><br>
+        <span class="en">A small workshop building a remote-access place for your own computers, with a little room for agents.</span></span>
+      </summary>
+      <ul>
+        <li><span class="node"><a class="name" href="https://dureh-gb.github.io/dureh.html">두레 Dureh</a>
+          <span class="desc">흩어진 내 컴퓨터들을 한 작업대에 모읍니다. <span class="en">All your own computers, gathered at one desk.</span></span></span></li>
+        <li><span class="node"><a class="name" href="https://dureh-gb.github.io/pumasi.html">품앗이 Pumasi</a>
+          <span class="desc">건너편 컴퓨터에 손을 빌려주는 화면 스트림 도우미 (macOS · Linux · Windows). <span class="en">Lend a hand to the computer across the room.</span></span></span></li>
+        <li><span class="node"><a class="name" href="https://dureh-gb.github.io/masil.html">마실 Masil</a>
+          <span class="desc">어디서든 내 컴퓨터로 마실 갑니다: SSH 터미널, 화면, 파일. <span class="en">Drop in on your computers from wherever you are.</span></span></span></li>
+        <li><span class="node"><a class="name" href="https://github.com/dureh-gb/homebrew-tap">단잠 Danjam</a><span class="tag">macOS</span>
+          <span class="desc">Mac이 잠든 동안 외장 USB 팬을 꺼 주는 작은 도구 (Homebrew tap). <span class="en">Turns off an external USB fan while the Mac sleeps.</span></span></span></li>
+      </ul>
+    </details>
+  </li>
+
+  <li class="group">
+    <details open>
+      <summary class="node"><span class="name">reMarkable Paper Pro</span>
+        <span class="desc">전자잉크 태블릿에 한글과 쓸모를 더하는 애드온들. <span class="en">Add-ons that bring Korean and more to the e-paper tablet.</span></span>
+      </summary>
+      <ul>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-korean">rmpp-korean</a>
+          <span class="desc">한글 키보드, 한글 폰트, 외장 키보드 지원. <span class="en">Hangul keyboard, Korean fonts, external keyboards.</span></span></span>
+          <ul>
+            <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-lang">rmpp-lang</a>
+              <span class="desc">언어별 키보드·폰트 애드온 (일본어, 중국어, 러시아어 …). <span class="en">Per-language keyboards and fonts as add-ons.</span></span></span></li>
+          </ul>
+        </li>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-hwr">rmpp-hwr</a>
+          <span class="desc">기기 안에서 도는 한글/영어 필기 인식, 내 손글씨로 개인 모델 학습. <span class="en">On-device Korean/English handwriting recognition with personal models.</span></span></span>
+          <ul>
+            <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-hwr-db">rmpp-hwr-db</a><span class="tag">CC BY 4.0</span>
+              <span class="desc">공개 한글·영어·숫자 필기 데이터셋 (펜 스트로크). <span class="en">Open handwriting dataset with pen strokes.</span></span></span></li>
+          </ul>
+        </li>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-bt">rmpp-bt</a>
+          <span class="desc">블루투스 설정 화면과 키보드 지원. <span class="en">Bluetooth settings page and keyboard support.</span></span></span></li>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-tailscale">rmpp-tailscale</a>
+          <span class="desc">설정 화면이 있는 Tailscale: 켜고 끄기, QR 로그인, Tailscale 위 SSH. <span class="en">Tailscale with a Settings page, QR login and SSH.</span></span></span></li>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-refresh">rmpp-refresh</a>
+          <span class="desc">노트 툴바에 전체 화면 새로고침 버튼. <span class="en">A full e-paper refresh button in the notebook toolbar.</span></span></span></li>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/rmpp-packages">rmpp-packages</a>
+          <span class="desc">위 애드온들을 담은 Vellum 패키지 저장소. <span class="en">The Vellum package repository for these add-ons.</span></span></span>
+          <ul>
+            <li><span class="node"><a class="name" href="https://github.com/lorancecall/vellum">vellum</a><span class="tag">fork</span>
+              <span class="desc">reMarkable용 패키지 관리자 (<a href="https://github.com/vellum-dev/vellum">vellum-dev/vellum</a> 포크). <span class="en">Package manager for reMarkable tablets.</span></span></span></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </li>
+
+  <li class="group">
+    <details open>
+      <summary class="node"><span class="name">Legion Go &amp; Windows</span>
+        <span class="desc">휴대용 PC 한 대를 든든하게. <span class="en">Keeping one handheld PC steady.</span></span>
+      </summary>
+      <ul>
+        <li><span class="node"><a class="name" href="https://github.com/lorancecall/keel">keel</a>
+          <span class="desc">메모리·eGPU·네트워크 가드를 하나로 (RAM Guard, eGPU Guard, net-pin 통합). <span class="en">Memory, eGPU and network guard for one Legion Go.</span></span></span>
+          <ul>
+            <li><span class="node"><a class="name" href="https://github.com/lorancecall/net-pin">net-pin</a>
+              <span class="desc">인터넷·VPN·경로를 고른 네트워크에 고정, 킬 스위치 포함. <span class="en">Pin traffic to the network you choose, with kill switches.</span></span></span></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+  </li>
+
+</ul>
+</nav>
+
+<footer>
+  언젠가는 게임도 하나 만들고 싶습니다. · <span class="en">Someday, a game of my own.</span>
+</footer>
+</main>
+</body>
+</html>
