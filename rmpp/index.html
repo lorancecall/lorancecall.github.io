@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rmpp · add-ons for reMarkable Paper Pro</title>
+<meta name="description" content="Personal add-ons for the reMarkable Paper Pro: languages and keyboards, handwriting to text, Bluetooth, Tailscale, screen refresh. Free to use.">
+<link rel="alternate" hreflang="ko" href="ko.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<div class="top">
+  <a href="../">← 0xLorance::Call</a>
+  <span class="langs"><strong>English</strong><a href="ko.html" hreflang="ko" lang="ko">한국어</a></span>
+</div>
+
+<div class="hero">
+  <h1>rmpp</h1>
+  <p class="lead">Add-ons for the reMarkable Paper Pro: type in your language, turn handwriting into text, pair Bluetooth
+    keyboards, reach the tablet from anywhere. Tuned on my own tablet, free for you to use.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/lorancecall/rmpp-packages/releases/latest">Download rmpp setup</a>
+    <a class="btn" href="#start">Getting started</a>
+  </div>
+</div>
+
+<section id="mods">
+  <h2>What's inside</h2>
+  <p class="sub">Each one is optional. None needs xovi, and they keep working after a reboot.</p>
+  <div class="grid">
+    <a class="card" href="https://github.com/lorancecall/rmpp-lang"><h3>rmpp-lang</h3>
+      <p>On-screen and hardware keyboards and fonts per language: Korean (with Old Hangul), Japanese, Chinese, Russian.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-hwr"><h3>rmpp-hwr</h3>
+      <p>Handwriting to text, on the tablet: lasso a few lines or convert a page. Korean, English, Chinese, Japanese.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-bt"><h3>rmpp-bt</h3>
+      <p>A Bluetooth page in Settings: search, pair, connect, forget. Keyboards work like the Type Folio.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-tailscale"><h3>rmpp-tailscale</h3>
+      <p>Tailscale with a Settings page: on/off, log in by QR code, devices, SSH to the tablet from anywhere.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-refresh"><h3>rmpp-refresh</h3>
+      <p>One button in the notebook toolbar that redraws the whole screen and clears ghosting.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-hwr-db"><h3>rmpp-hwr-db<span class="tag">CC BY 4.0</span></h3>
+      <p>An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.</p></a>
+  </div>
+</section>
+
+<section id="start">
+  <h2>Getting started</h2>
+  <p class="sub">About 15 minutes the first time. You need a computer (Windows, macOS or Linux) and the tablet's USB-C cable.</p>
+  <ol class="steps">
+    <li><h3>Turn on developer mode</h3>
+      <p>Settings › General › Paper Tablet › Software › Advanced › <strong>Developer Mode</strong>.</p>
+      <div class="warn"><strong>This factory-resets the tablet.</strong> Sync your notebooks to your reMarkable account first;
+        they come back after you sign in again. See reMarkable's
+        <a href="https://developer.remarkable.com/documentation/developer-mode">developer mode guide</a>.</div></li>
+    <li><h3>Find the root password</h3>
+      <p>Settings › General › Help › About › <strong>Copyrights and licenses</strong>. The SSH password is under
+        “General information”. The setup app asks for it once, then uses a key.</p></li>
+    <li><h3>Connect the tablet</h3>
+      <p>Plug in the USB-C cable. The tablet appears at <code>10.11.99.1</code>. (Wi-Fi works too, once SSH over
+        Wi-Fi is turned on: <code>ssh root@10.11.99.1 rm-ssh-over-wlan on</code>.)</p></li>
+    <li><h3>Run rmpp setup</h3>
+      <p><a href="https://github.com/lorancecall/rmpp-packages/releases/latest">Download</a> the app for your system,
+        connect, tick what you want, and press <strong>Install</strong>. The tablet's screen restarts once or twice.</p>
+      <p class="muted">The app is not signed: Windows shows “Windows protected your PC” (More info › Run anyway), and
+        macOS asks you to allow it in System Settings › Privacy &amp; Security. Prefer a terminal? Use the
+        <a href="https://github.com/lorancecall/rmpp-packages#install">install scripts</a>.</p></li>
+    <li><h3>After a reMarkable OS update</h3>
+      <p>Open rmpp setup again and press <strong>Restore</strong>. An OS update replaces the system files where the
+        add-ons live; your settings and notebooks are kept.</p></li>
+  </ol>
+</section>
+
+<section id="terms">
+  <h2>The deal</h2>
+  <p class="sub">A personal project, shared as is.</p>
+  <div class="terms">
+    <div><h3>Personal</h3><p>Code I tuned for my own tablet, packaged with <a href="https://github.com/vellum-dev/vellum">Vellum</a> only to keep it in one place.</p></div>
+    <div><h3>Not official</h3><p>I don't plan to submit these to Vellum's main repository or other package indexes myself.</p></div>
+    <div><h3>Take it</h3><p>Found something useful? Move it to another repository or package manager, no need to ask. Keep the license (GPL-3.0).</p></div>
+    <div><h3>No promises</h3><p>Tested on my Paper Pro (OS 3.29) only. Issues are welcome; fixes come when I have time.</p></div>
+  </div>
+</section>
+
+<footer>
+  Not affiliated with reMarkable AS. · <a href="https://github.com/lorancecall/rmpp-packages">rmpp-packages</a> ·
+  <a href="https://github.com/lorancecall">GitHub @lorancecall</a>
+</footer>
+</main>
+</body>
+</html>
