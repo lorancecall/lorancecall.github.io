@@ -70,3 +70,17 @@ ul.plain li { margin: 4px 0; }
 .terms p { margin: 0; color: var(--muted); font-size: .92rem; }
 footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
 footer a { color: var(--muted); }
+
+/* rmpp-hwr-db call for writers: an inverted band */
+.promo { background: var(--inv-bg); color: var(--inv-fg); border-radius: 14px; padding: 30px 28px; margin: 36px 0 4px; border-bottom: none; }
+.promo a { color: var(--inv-fg); }
+.promo .kicker { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; opacity: .7; margin: 0 0 8px; font-weight: 600; }
+.promo h2 { font-size: clamp(1.5rem, 4.5vw, 2.1rem); line-height: 1.15; letter-spacing: -0.03em; margin: 0 0 12px; }
+.promo p.sub { color: inherit; opacity: .78; margin: 0 0 20px; max-width: 38em; }
+.promo .points { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin: 0 0 24px; padding: 0; list-style: none; }
+.promo .points li { border-top: 1px solid currentColor; padding-top: 10px; font-size: .93rem; }
+.promo .points strong { display: block; margin-bottom: 2px; }
+.promo .points span { opacity: .75; }
+.promo .btn { border-color: var(--inv-fg); color: var(--inv-fg); }
+.promo .btn.primary { background: var(--inv-fg); color: var(--inv-bg); }
+.top nav a { margin-right: 14px; }
