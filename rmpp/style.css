@@ -84,3 +84,7 @@ footer a { color: var(--muted); }
 .promo .btn { border-color: var(--inv-fg); color: var(--inv-fg); }
 .promo .btn.primary { background: var(--inv-fg); color: var(--inv-bg); }
 .top nav a { margin-right: 14px; }
+/* "request a keyboard language" row under the add-on cards */
+.ask { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-top: 14px;
+  border: 1px dashed var(--fg); border-radius: 10px; padding: 16px 18px; }
+.ask p { margin: 0; color: var(--muted); font-size: .92rem; max-width: 34em; }
