@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rmpp · reMarkable Paper Pro 애드온</title>
+<meta name="description" content="reMarkable Paper Pro용 개인 애드온. 언어별 키보드, 손글씨 텍스트 변환, 블루투스, Tailscale, 화면 새로고침. 자유롭게 사용.">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<div class="top">
+  <a href="../ko.html">← 0xLorance::Call</a>
+  <span class="langs"><a href="./" hreflang="en" lang="en">English</a><strong>한국어</strong></span>
+</div>
+
+<div class="hero">
+  <h1>rmpp</h1>
+  <p class="lead">reMarkable Paper Pro 애드온 모음. 내 언어로 입력, 손글씨를 텍스트로, 블루투스 키보드 연결, 어디서나 태블릿 접속.
+    내 태블릿에 맞춰 손본 코드. 자유롭게 사용.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/lorancecall/rmpp-packages/releases/latest">rmpp setup 내려받기</a>
+    <a class="btn" href="#start">시작하기</a>
+  </div>
+</div>
+
+<section id="mods">
+  <h2>들어 있는 것</h2>
+  <p class="sub">모두 골라서 설치. xovi 필요 없음. 재부팅해도 그대로.</p>
+  <div class="grid">
+    <a class="card" href="https://github.com/lorancecall/rmpp-lang"><h3>rmpp-lang</h3>
+      <p>언어별 화면·하드웨어 키보드와 폰트. 한국어(옛한글 포함), 일본어, 중국어, 러시아어.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-hwr"><h3>rmpp-hwr</h3>
+      <p>태블릿 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 고르거나 페이지 통째로. 한국어, 영어, 중국어, 일본어.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-bt"><h3>rmpp-bt</h3>
+      <p>설정 속 블루투스 화면. 검색, 페어링, 연결, 삭제. 키보드는 Type Folio처럼.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-tailscale"><h3>rmpp-tailscale</h3>
+      <p>설정 화면 속 Tailscale. 켜고 끄기, QR 로그인, 기기 목록, 어디서나 태블릿에 SSH.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-refresh"><h3>rmpp-refresh</h3>
+      <p>노트 툴바에 버튼 하나. 화면 전체를 다시 그려 잔상 제거.</p></a>
+    <a class="card" href="https://github.com/lorancecall/rmpp-hwr-db"><h3>rmpp-hwr-db<span class="tag">CC BY 4.0</span></h3>
+      <p>Paper Pro로 쓴 공개 손글씨 데이터셋. 내 언어의 손글씨로 참여 가능.</p></a>
+  </div>
+</section>
+
+<section id="start">
+  <h2>시작하기</h2>
+  <p class="sub">처음에는 15분쯤. 컴퓨터(Windows, macOS, Linux)와 태블릿 USB-C 케이블 필요.</p>
+  <ol class="steps">
+    <li><h3>개발자 모드 켜기</h3>
+      <p>설정 › 일반 › Paper Tablet › 소프트웨어 › 고급 › <strong>개발자 모드</strong>.</p>
+      <div class="warn"><strong>태블릿이 공장 초기화됨.</strong> 먼저 노트를 reMarkable 계정에 동기화. 다시 로그인하면 돌아옴.
+        reMarkable의 <a href="https://developer.remarkable.com/documentation/developer-mode">개발자 모드 안내</a> 참고.</div></li>
+    <li><h3>root 비밀번호 확인</h3>
+      <p>설정 › 일반 › 도움말 › 정보 › <strong>저작권 및 라이선스</strong>. “일반 정보” 아래 SSH 비밀번호.
+        설치 앱이 처음 한 번만 묻고, 그다음부터는 키 사용.</p></li>
+    <li><h3>태블릿 연결</h3>
+      <p>USB-C 케이블로 연결하면 태블릿 주소는 <code>10.11.99.1</code>. (Wi-Fi도 가능. SSH over Wi-Fi를 한 번 켜 두면 됨:
+        <code>ssh root@10.11.99.1 rm-ssh-over-wlan on</code>)</p></li>
+    <li><h3>rmpp setup 실행</h3>
+      <p>내 시스템용 앱을 <a href="https://github.com/lorancecall/rmpp-packages/releases/latest">내려받고</a>, 연결하고,
+        원하는 것을 체크한 뒤 <strong>설치</strong>. 설치 중 태블릿 화면이 한두 번 다시 시작됨.</p>
+      <p class="muted">서명 없는 앱이라 Windows는 “Windows의 PC 보호” 창(추가 정보 › 실행), macOS는 시스템 설정 › 개인정보 보호 및
+        보안에서 허용 필요. 터미널이 편하면 <a href="https://github.com/lorancecall/rmpp-packages#install">설치 스크립트</a>.</p></li>
+    <li><h3>reMarkable OS 업데이트 뒤</h3>
+      <p>rmpp setup을 다시 열고 <strong>복원</strong>. OS 업데이트가 애드온이 있는 시스템 파일을 바꾸기 때문. 설정과 노트는 그대로.</p></li>
+  </ol>
+</section>
+
+<section id="terms">
+  <h2>이용 조건</h2>
+  <p class="sub">개인 프로젝트. 있는 그대로 공유.</p>
+  <div class="terms">
+    <div><h3>개인용</h3><p>내 태블릿에 맞춰 손본 코드. <a href="https://github.com/vellum-dev/vellum">Vellum</a> 패키지로 묶은 건 한곳에 모아 두려고.</p></div>
+    <div><h3>공식 아님</h3><p>Vellum 공식 저장소나 다른 패키지 목록에 직접 올릴 계획 없음.</p></div>
+    <div><h3>가져가도 됨</h3><p>쓸 만하면 다른 저장소나 패키지 관리자로 옮겨도 됨. 따로 묻지 않아도 됨. 라이선스(GPL-3.0)만 유지.</p></div>
+    <div><h3>보장 없음</h3><p>내 Paper Pro(OS 3.29)에서만 확인. 이슈는 환영, 수정은 시간 날 때.</p></div>
+  </div>
+</section>
+
+<footer>
+  reMarkable AS와 관계없음. · <a href="https://github.com/lorancecall/rmpp-packages">rmpp-packages</a> ·
+  <a href="https://github.com/lorancecall">GitHub @lorancecall</a>
+</footer>
+</main>
+</body>
+</html>
