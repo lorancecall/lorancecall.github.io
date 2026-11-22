@@ -1,0 +1,64 @@
+{
+  "_about": "Texts and placement for the rmpp projects on / , /ko.html, /rmpp/ and /rmpp/ko.html. The list itself comes from GitHub: every public lorancecall repository with the topic rmpp (scripts/rmpp_projects.py). A project missing here still appears, with its GitHub description, after the others.",
+  "projects": {
+    "rmpp-packages": {
+      "card": false,
+      "tree_en": "The base: rmpp setup (installer) and the <a href=\"https://github.com/vellum-dev/vellum\">Vellum</a> package repository every add-on below is built on.",
+      "tree_ko": "기반: 설치 프로그램 rmpp setup과, 아래 애드온 모두가 올라가는 <a href=\"https://github.com/vellum-dev/vellum\">Vellum</a> 패키지 저장소."
+    },
+    "rmpp-lang": {
+      "card_en": "On-screen and hardware keyboards and fonts per language: Korean (with Old Hangul), Japanese, Chinese, Russian, Bulgarian.",
+      "card_ko": "언어별 화면·하드웨어 키보드와 폰트. 한국어(옛한글 포함), 일본어, 중국어, 러시아어, 불가리아어.",
+      "tree_en": "Keyboards and fonts per language (Korean, Japanese, Chinese, Russian, ...) as add-ons.",
+      "tree_ko": "언어별 키보드와 폰트를 애드온으로. 한국어, 일본어, 중국어, 러시아어, ..."
+    },
+    "rmpp-hwr": {
+      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.",
+      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라 옮기고 고칠 수 있는 잉크 글씨로, 또는 페이지 통째로. 한국어, 영어, 중국어, 일본어, 라틴 문자 언어.",
+      "tree_en": "On-device handwriting recognition: lasso to typed text or movable ink text (Korean, English, Chinese, Japanese, Latin), with tools to train a personal model.",
+      "tree_ko": "기기 안에서 도는 필기 인식. 올가미로 텍스트나 옮길 수 있는 잉크 글씨로 (한국어, 영어, 중국어, 일본어, 라틴). 내 손글씨로 맞춤 모델 학습까지."
+    },
+    "rmpp-hwr-db": {
+      "parent": "rmpp-hwr",
+      "tag": "CC BY 4.0",
+      "card_en": "An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.",
+      "card_ko": "Paper Pro로 쓴 공개 손글씨 데이터셋. 내 언어의 손글씨로 참여 가능.",
+      "tree_en": "Open Korean/English/digit handwriting dataset with pen strokes.",
+      "tree_ko": "펜 스트로크까지 담은 한글·영어·숫자 필기 데이터셋. 공개."
+    },
+    "rmpp-textobj": {
+      "parent": "rmpp-hwr",
+      "card_en": "Text objects: typed text written as pen strokes you can select, move, edit and erase like ink. Comes with rmpp-hwr.",
+      "card_ko": "텍스트 객체: 입력한 글자를 펜 획으로 그려, 잉크처럼 고르고 옮기고 고치고 지울 수 있게. rmpp-hwr과 함께 설치.",
+      "tree_en": "Text objects: typed text as movable, editable pen strokes (installed with rmpp-hwr).",
+      "tree_ko": "텍스트 객체: 입력한 글자를 옮기고 고칠 수 있는 펜 획으로 (rmpp-hwr과 함께 설치)."
+    },
+    "rmpp-bt": {
+      "card_en": "A Bluetooth page in Settings: search, pair, connect, forget. Keyboards work like the Type Folio.",
+      "card_ko": "설정 속 블루투스 화면. 검색, 페어링, 연결, 삭제. 키보드는 Type Folio처럼.",
+      "tree_en": "Bluetooth settings page and keyboard support.",
+      "tree_ko": "블루투스 설정 화면과 키보드 지원."
+    },
+    "rmpp-tailscale": {
+      "card_en": "Tailscale with a Settings page: on/off, log in by QR code, devices, SSH to the Paper Pro from anywhere.",
+      "card_ko": "설정 화면 속 Tailscale. 켜고 끄기, QR 로그인, 기기 목록, 어디서나 Paper Pro에 SSH.",
+      "tree_en": "Tailscale with a Settings page: on/off, QR login, status, SSH over Tailscale.",
+      "tree_ko": "설정 화면 속 Tailscale. 켜고 끄기, QR 로그인, 상태 확인, Tailscale 너머 SSH."
+    },
+    "rmpp-refresh": {
+      "card_en": "One button in the notebook toolbar that redraws the whole screen and clears ghosting.",
+      "card_ko": "노트 툴바에 버튼 하나. 화면 전체를 다시 그려 잔상 제거.",
+      "tree_en": "A full e-paper refresh button in the notebook toolbar.",
+      "tree_ko": "노트 툴바에 전체 화면 새로고침 버튼 하나."
+    },
+    "rmpp-studio": {
+      "tag_tree": "PC",
+      "card_en": "Record, edit and export Paper Pro tutorials and screenshots from your PC; drive the Paper Pro by script. Its Paper Pro part, rmpp-remote, is in rmpp setup.",
+      "card_ko": "PC에서 Paper Pro 튜토리얼과 스크린샷을 녹화, 편집, 내보내기. 스크립트로 Paper Pro 조작. Paper Pro 쪽 rmpp-remote는 rmpp setup에.",
+      "tree_en": "Record, edit and export Paper Pro tutorials on the PC, and drive the Paper Pro over SSH by hand, script or AI agent.",
+      "tree_ko": "PC에서 Paper Pro 튜토리얼 녹화·편집·내보내기. 손으로, 스크립트로, AI 에이전트로 SSH 원격 조작까지."
+    }
+  },
+  "order": ["rmpp-packages", "rmpp-lang", "rmpp-hwr", "rmpp-hwr-db", "rmpp-textobj", "rmpp-bt", "rmpp-tailscale", "rmpp-refresh", "rmpp-studio"],
+  "card_order": ["rmpp-lang", "rmpp-hwr", "rmpp-textobj", "rmpp-bt", "rmpp-tailscale", "rmpp-refresh", "rmpp-hwr-db", "rmpp-studio"]
+}

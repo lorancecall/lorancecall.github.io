@@ -1,0 +1,39 @@
+name: rmpp project lists
+
+# The rmpp cards (/rmpp/, /rmpp/ko.html) and the project tree (/, /ko.html) come from GitHub: every public repository
+# of lorancecall with the topic rmpp (scripts/rmpp_projects.py; texts and order in rmpp/projects.json).
+on:
+  schedule:
+    - cron: "47 4 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [rmpp-release]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  lists:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pages are current
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/rmpp_projects.py --check
+
+      - name: Rewrite the lists and publish
+        if: github.event_name != 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/rmpp_projects.py
+          if ! git diff --quiet; then
+            git config user.name "lorancecall"
+            git config user.email "84116812+lorancecall@users.noreply.github.com"
+            git commit -am "rmpp: project lists from GitHub (topic rmpp)"
+            git push
+          fi
