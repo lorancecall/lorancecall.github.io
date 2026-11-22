@@ -47,12 +47,13 @@
 
 <section id="mods">
   <h2>들어 있는 것</h2>
-  <p class="sub">모두 골라서 설치. xovi 필요 없음. 재부팅해도 그대로.</p>
+  <p class="sub">모두 골라서 설치. 전부 <a href="https://github.com/lorancecall/rmpp-packages">rmpp-packages</a> 기반: rmpp setup으로 설치, xovi 없이 부팅마다
+    로드, OS 업데이트 뒤엔 복원 한 번 (<a href="https://github.com/lorancecall/rmpp-packages/blob/main/docs/how-it-works.md">작동 방식</a>).</p>
   <div class="grid">
     <a class="card" href="https://github.com/lorancecall/rmpp-lang"><h3>rmpp-lang</h3>
       <p>언어별 화면·하드웨어 키보드와 폰트. 한국어(옛한글 포함), 일본어, 중국어, 러시아어, 불가리아어.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr"><h3>rmpp-hwr</h3>
-      <p>태블릿 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라 옮기고 고칠 수 있는 잉크 글씨로, 또는 페이지 통째로. 한국어, 영어, 중국어, 일본어.</p></a>
+      <p>태블릿 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라 옮기고 고칠 수 있는 잉크 글씨로, 또는 페이지 통째로. 한국어, 영어, 중국어, 일본어, 라틴 문자 언어.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-bt"><h3>rmpp-bt</h3>
       <p>설정 속 블루투스 화면. 검색, 페어링, 연결, 삭제. 키보드는 Type Folio처럼.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-tailscale"><h3>rmpp-tailscale</h3>
@@ -62,7 +63,7 @@
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr-db"><h3>rmpp-hwr-db<span class="tag">CC BY 4.0</span></h3>
       <p>Paper Pro로 쓴 공개 손글씨 데이터셋. 내 언어의 손글씨로 참여 가능.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-studio"><h3>rmpp-studio</h3>
-      <p>PC에서 태블릿 튜토리얼과 스크린샷을 녹화, 편집, 내보내기. 스크립트로 태블릿 조작.</p></a>
+      <p>PC에서 태블릿 튜토리얼과 스크린샷을 녹화, 편집, 내보내기. 스크립트로 태블릿 조작. 태블릿 쪽 rmpp-remote는 rmpp setup에.</p></a>
   </div>
   <div class="ask" id="language-request">
     <div><h3>키보드에 내 언어가 없다면?</h3>
@@ -93,7 +94,8 @@
       <p>내 시스템용 앱을 <a href="https://github.com/lorancecall/rmpp-packages/releases/latest">내려받고</a>, 연결하고,
         원하는 것을 체크한 뒤 <strong>설치</strong>. 설치 중 태블릿 화면이 한두 번 다시 시작됨.</p>
       <p class="muted">서명 없는 앱이라 Windows는 “Windows의 PC 보호” 창(추가 정보 › 실행), macOS는 시스템 설정 › 개인정보 보호 및
-        보안에서 허용 필요. 터미널이 편하면 <a href="https://github.com/lorancecall/rmpp-packages#install">설치 스크립트</a>.</p></li>
+        보안에서 허용 필요. 터미널이 편하면 <a href="https://github.com/lorancecall/rmpp-packages#install">설치 스크립트</a>. Vellum으로 직접
+        설치하는 방법은 각 애드온 페이지의 docs/install.md.</p></li>
     <li><h3>reMarkable OS 업데이트 뒤</h3>
       <p>rmpp setup을 다시 열고 <strong>복원</strong>. OS 업데이트가 애드온이 있는 시스템 파일을 바꾸기 때문. 설정과 노트는 그대로.</p></li>
   </ol>
