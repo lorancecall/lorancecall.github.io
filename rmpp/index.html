@@ -21,7 +21,7 @@
 <div class="hero">
   <h1>rmpp</h1>
   <p class="lead">Add-ons for the reMarkable Paper Pro: type in your language, turn handwriting into text, pair Bluetooth
-    keyboards, reach the tablet from anywhere. Tuned on my own tablet, free for you to use.</p>
+    keyboards, reach the Paper Pro from anywhere. Tuned on my own Paper Pro, free for you to use.</p>
   <div class="cta">
     <a class="btn primary" href="https://github.com/lorancecall/rmpp-packages/releases/latest">Download rmpp setup</a>
     <a class="btn" href="#start">Getting started</a>
@@ -30,12 +30,12 @@
 
 <section class="promo" id="handwriting">
   <p class="kicker">rmpp-hwr-db · writers wanted</p>
-  <h2>Teach the tablet to read your handwriting, in your language.</h2>
+  <h2>Teach the Paper Pro to read your handwriting, in your language.</h2>
   <p class="sub">Handwriting recognition is only as good as the handwriting it has seen. rmpp-hwr-db is a new, open
     dataset of real pen strokes written on the Paper Pro, by the people who use it. It is just starting: the first
     writers shape it the most.</p>
   <ul class="points">
-    <li><strong>Write on your tablet</strong><span>Practice pages land in a notebook. Write the lines, and your
+    <li><strong>Write on your Paper Pro</strong><span>Practice pages land in a notebook. Write the lines, and your
       strokes are shared without your name.</span></li>
     <li><strong>Every language</strong><span>Korean and English are open now. Ask for yours and it opens once its
       first sentences are in.</span></li>
@@ -57,17 +57,17 @@
     <a class="card" href="https://github.com/lorancecall/rmpp-lang"><h3>rmpp-lang</h3>
       <p>On-screen and hardware keyboards and fonts per language: Korean (with Old Hangul), Japanese, Chinese, Russian, Bulgarian.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr"><h3>rmpp-hwr</h3>
-      <p>Handwriting to text, on the tablet: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.</p></a>
+      <p>Handwriting to text, on the Paper Pro: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-bt"><h3>rmpp-bt</h3>
       <p>A Bluetooth page in Settings: search, pair, connect, forget. Keyboards work like the Type Folio.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-tailscale"><h3>rmpp-tailscale</h3>
-      <p>Tailscale with a Settings page: on/off, log in by QR code, devices, SSH to the tablet from anywhere.</p></a>
+      <p>Tailscale with a Settings page: on/off, log in by QR code, devices, SSH to the Paper Pro from anywhere.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-refresh"><h3>rmpp-refresh</h3>
       <p>One button in the notebook toolbar that redraws the whole screen and clears ghosting.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr-db"><h3>rmpp-hwr-db<span class="tag">CC BY 4.0</span></h3>
       <p>An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-studio"><h3>rmpp-studio</h3>
-      <p>Record, edit and export tablet tutorials and screenshots from your PC; drive the tablet by script. Its tablet part, rmpp-remote, is in rmpp setup.</p></a>
+      <p>Record, edit and export Paper Pro tutorials and screenshots from your PC; drive the Paper Pro by script. Its Paper Pro part, rmpp-remote, is in rmpp setup.</p></a>
   </div>
   <div class="ask" id="language-request">
     <div><h3>Your language isn't on the keyboard yet?</h3>
@@ -83,22 +83,22 @@
 
 <section id="start">
   <h2>Getting started</h2>
-  <p class="sub">About 15 minutes the first time. You need a computer (Windows, macOS or Linux) and the tablet's USB-C cable.</p>
+  <p class="sub">About 15 minutes the first time. You need a computer (Windows, macOS or Linux) and the Paper Pro's USB-C cable.</p>
   <ol class="steps">
     <li><h3>Turn on developer mode</h3>
       <p>Settings › General › Paper Tablet › Software › Advanced › <strong>Developer Mode</strong>.</p>
-      <div class="warn"><strong>This factory-resets the tablet.</strong> Sync your notebooks to your reMarkable account first;
+      <div class="warn"><strong>This factory-resets the Paper Pro.</strong> Sync your notebooks to your reMarkable account first;
         they come back after you sign in again. See reMarkable's
         <a href="https://developer.remarkable.com/documentation/developer-mode">developer mode guide</a>.</div></li>
     <li><h3>Find the root password</h3>
       <p>Settings › General › Help › About › <strong>Copyrights and licenses</strong>. The SSH password is under
         “General information”. The setup app asks for it once, then uses a key.</p></li>
-    <li><h3>Connect the tablet</h3>
-      <p>Plug in the USB-C cable. The tablet appears at <code>10.11.99.1</code>. (Wi-Fi works too, once SSH over
+    <li><h3>Connect the Paper Pro</h3>
+      <p>Plug in the USB-C cable. The Paper Pro appears at <code>10.11.99.1</code>. (Wi-Fi works too, once SSH over
         Wi-Fi is turned on: <code>ssh root@10.11.99.1 rm-ssh-over-wlan on</code>.)</p></li>
     <li><h3>Run rmpp setup</h3>
       <p><a href="https://github.com/lorancecall/rmpp-packages/releases/latest">Download</a> the app for your system,
-        connect, tick what you want, and press <strong>Install</strong>. The tablet's screen restarts once or twice.</p>
+        connect, tick what you want, and press <strong>Install</strong>. The Paper Pro's screen restarts once or twice.</p>
       <p class="muted">The app is not signed: Windows shows “Windows protected your PC” (More info › Run anyway), and
         macOS asks you to allow it in System Settings › Privacy &amp; Security. Prefer a terminal? Use the
         <a href="https://github.com/lorancecall/rmpp-packages#install">install scripts</a>. Each add-on's own page
@@ -113,10 +113,10 @@
   <h2>The deal</h2>
   <p class="sub">A personal project, shared as is.</p>
   <div class="terms">
-    <div><h3>Personal</h3><p>Code I tuned for my own tablet, packaged with <a href="https://github.com/vellum-dev/vellum">Vellum</a> only to keep it in one place.</p></div>
+    <div><h3>Personal</h3><p>Code I tuned for my own reMarkable Paper Pro, packaged with <a href="https://github.com/vellum-dev/vellum">Vellum</a> only to keep it in one place.</p></div>
     <div><h3>Not official</h3><p>I don't plan to submit these to Vellum's main repository or other package indexes myself.</p></div>
     <div><h3>Take it</h3><p>Found something useful? Move it to another repository or package manager, no need to ask. Keep the license (GPL-3.0).</p></div>
-    <div><h3>No promises</h3><p>Tested on my Paper Pro (OS 3.29) only. Issues are welcome; fixes come when I have time.</p></div>
+    <div><h3>No promises</h3><p>Made for and tested on the reMarkable Paper Pro with OS 3.29 only; other models are not supported and may not work. Keeping up with newer OS versions happens when I have time, and may not happen. Issues are welcome; fixes come when I have time.</p></div>
   </div>
 </section>
 
