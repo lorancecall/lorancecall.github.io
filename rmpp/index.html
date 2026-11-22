@@ -51,12 +51,13 @@
 
 <section id="mods">
   <h2>What's inside</h2>
-  <p class="sub">Each one is optional. None needs xovi, and they keep working after a reboot.</p>
+  <p class="sub">Each one is optional, and all are built on <a href="https://github.com/lorancecall/rmpp-packages">rmpp-packages</a>: rmpp setup installs them,
+    they load at every boot without xovi, and one Restore brings them back after an OS update (<a href="https://github.com/lorancecall/rmpp-packages/blob/main/docs/how-it-works.md">how it works</a>).</p>
   <div class="grid">
     <a class="card" href="https://github.com/lorancecall/rmpp-lang"><h3>rmpp-lang</h3>
       <p>On-screen and hardware keyboards and fonts per language: Korean (with Old Hangul), Japanese, Chinese, Russian, Bulgarian.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr"><h3>rmpp-hwr</h3>
-      <p>Handwriting to text, on the tablet: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese.</p></a>
+      <p>Handwriting to text, on the tablet: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-bt"><h3>rmpp-bt</h3>
       <p>A Bluetooth page in Settings: search, pair, connect, forget. Keyboards work like the Type Folio.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-tailscale"><h3>rmpp-tailscale</h3>
@@ -66,7 +67,7 @@
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr-db"><h3>rmpp-hwr-db<span class="tag">CC BY 4.0</span></h3>
       <p>An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-studio"><h3>rmpp-studio</h3>
-      <p>Record, edit and export tablet tutorials and screenshots from your PC; drive the tablet by script.</p></a>
+      <p>Record, edit and export tablet tutorials and screenshots from your PC; drive the tablet by script. Its tablet part, rmpp-remote, is in rmpp setup.</p></a>
   </div>
   <div class="ask" id="language-request">
     <div><h3>Your language isn't on the keyboard yet?</h3>
@@ -100,7 +101,8 @@
         connect, tick what you want, and press <strong>Install</strong>. The tablet's screen restarts once or twice.</p>
       <p class="muted">The app is not signed: Windows shows “Windows protected your PC” (More info › Run anyway), and
         macOS asks you to allow it in System Settings › Privacy &amp; Security. Prefer a terminal? Use the
-        <a href="https://github.com/lorancecall/rmpp-packages#install">install scripts</a>.</p></li>
+        <a href="https://github.com/lorancecall/rmpp-packages#install">install scripts</a>. Each add-on's own page
+        (docs/install.md) shows the manual way with Vellum.</p></li>
     <li><h3>After a reMarkable OS update</h3>
       <p>Open rmpp setup again and press <strong>Restore</strong>. An OS update replaces the system files where the
         add-ons live; your settings and notebooks are kept.</p></li>
