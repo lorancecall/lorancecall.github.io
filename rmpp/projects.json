@@ -27,11 +27,10 @@
       "tree_ko": "펜 스트로크까지 담은 한글·영어·숫자 필기 데이터셋. 공개."
     },
     "rmpp-textobj": {
-      "parent": "rmpp-hwr",
-      "card_en": "Text objects: typed text written as pen strokes you can select, move, edit and erase like ink. Comes with rmpp-hwr.",
-      "card_ko": "텍스트 객체: 입력한 글자를 펜 획으로 그려, 잉크처럼 고르고 옮기고 고치고 지울 수 있게. rmpp-hwr과 함께 설치.",
-      "tree_en": "Text objects: typed text as movable, editable pen strokes (installed with rmpp-hwr).",
-      "tree_ko": "텍스트 객체: 입력한 글자를 옮기고 고칠 수 있는 펜 획으로 (rmpp-hwr과 함께 설치)."
+      "card_en": "Text objects: type text that is drawn as pen strokes, then select, move, edit and erase it like ink. Add text object in the T menu; rmpp-hwr can also turn handwriting into text objects.",
+      "card_ko": "텍스트 객체: 입력한 글자를 펜 획으로 그려, 잉크처럼 고르고 옮기고 고치고 지울 수 있게. T 메뉴의 Add text object로 바로 쓰고, rmpp-hwr로 손글씨를 텍스트 객체로 바꿀 수도.",
+      "tree_en": "Text objects: typed text as movable, editable pen strokes, from the T menu.",
+      "tree_ko": "텍스트 객체: 입력한 글자를 옮기고 고칠 수 있는 펜 획으로. T 메뉴에서."
     },
     "rmpp-bt": {
       "card_en": "A Bluetooth page in Settings: search, pair, connect, forget. Keyboards work like the Type Folio.",
@@ -59,6 +58,6 @@
       "tree_ko": "PC에서 Paper Pro 튜토리얼 녹화·편집·내보내기. 손으로, 스크립트로, AI 에이전트로 SSH 원격 조작까지."
     }
   },
-  "order": ["rmpp-packages", "rmpp-lang", "rmpp-hwr", "rmpp-hwr-db", "rmpp-textobj", "rmpp-bt", "rmpp-tailscale", "rmpp-refresh", "rmpp-studio"],
-  "card_order": ["rmpp-lang", "rmpp-hwr", "rmpp-textobj", "rmpp-bt", "rmpp-tailscale", "rmpp-refresh", "rmpp-hwr-db", "rmpp-studio"]
+  "order": ["rmpp-packages", "rmpp-lang", "rmpp-textobj", "rmpp-hwr", "rmpp-hwr-db", "rmpp-bt", "rmpp-tailscale", "rmpp-refresh", "rmpp-studio"],
+  "card_order": ["rmpp-lang", "rmpp-textobj", "rmpp-hwr", "rmpp-bt", "rmpp-tailscale", "rmpp-refresh", "rmpp-hwr-db", "rmpp-studio"]
 }
