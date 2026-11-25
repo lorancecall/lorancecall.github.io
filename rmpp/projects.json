@@ -13,10 +13,10 @@
       "tree_ko": "언어별 키보드와 폰트를 애드온으로. 한국어, 일본어, 중국어, 러시아어, ..."
     },
     "rmpp-hwr": {
-      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into typed text or a text object you can move and edit, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.",
-      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라 텍스트나 옮기고 고칠 수 있는 텍스트 객체로, 또는 페이지 통째로. 한국어, 영어, 중국어, 일본어, 라틴 문자 언어.",
-      "tree_en": "On-device handwriting recognition: lasso to typed text or a text object (Korean, English, Chinese, Japanese, Latin), with tools to train a personal model.",
-      "tree_ko": "기기 안에서 도는 손글씨 인식. 올가미로 텍스트나 텍스트 객체로 (한국어, 영어, 중국어, 일본어, 라틴). 내 손글씨로 맞춤 모델 학습까지."
+      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into typed text, or convert a page. Works with rmpp-textobj's text objects too. Korean is fine-tuned on handwriting; English, Chinese, Japanese and Latin-script languages use base models until rmpp-hwr-db has handwriting to train on.",
+      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라서, 또는 페이지 통째로. rmpp-textobj의 텍스트 객체와도 호환. 한국어는 손글씨로 파인튜닝된 모델, 영어, 중국어, 일본어, 라틴 문자 언어는 rmpp-hwr-db에 손글씨가 모일 때까지 기본 모델.",
+      "tree_en": "On-device handwriting recognition: lasso to typed text, works with text objects (Korean fine-tuned; English, Chinese, Japanese, Latin base models), with tools to train a personal model.",
+      "tree_ko": "기기 안에서 도는 손글씨 인식. 올가미로 텍스트로, 텍스트 객체와도 호환 (한국어는 파인튜닝, 영어, 중국어, 일본어, 라틴은 기본 모델). 내 손글씨로 맞춤 모델 학습까지."
     },
     "rmpp-hwr-db": {
       "parent": "rmpp-hwr",
