@@ -22,7 +22,8 @@
   <h1>rmpp</h1>
   <p class="lead">My personal collection of small add-ons for the reMarkable Paper Pro: a few handy features
     (your language's keyboard, handwriting to text, Bluetooth keyboards, Tailscale) that keep the Paper Pro's minimalism.
-    Pick what you need and rmpp setup installs it; unlike tethered mods, they stay on after a reboot.
+    Pick what you need and rmpp setup installs it; they stay on after a reboot, unlike mods that must be re-enabled
+    from a computer after each reboot.
     <strong>Tested only on the reMarkable Paper Pro (OS 3.29).</strong></p>
   <div class="cta">
     <a class="btn primary" href="https://github.com/lorancecall/rmpp-packages/releases/latest">Download rmpp setup</a>
@@ -62,13 +63,13 @@
     <a class="card" href="https://github.com/lorancecall/rmpp-textobj"><h3>rmpp-textobj</h3>
       <p>Text objects: type text that is drawn as pen strokes, then select, move, edit and erase it like ink. Add text object in the T menu; rmpp-hwr can also turn handwriting into text objects.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr"><h3>rmpp-hwr</h3>
-      <p>Handwriting to text, on the Paper Pro: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.</p></a>
+      <p>Handwriting to text, on the Paper Pro: lasso a few lines into typed text or a text object you can move and edit, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-bt"><h3>rmpp-bt</h3>
       <p>A Bluetooth page in Settings: search, pair, connect, forget. Keyboards work like the Type Folio.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-tailscale"><h3>rmpp-tailscale</h3>
       <p>Tailscale with a Settings page: on/off, log in by QR code, devices, SSH to the Paper Pro from anywhere.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-refresh"><h3>rmpp-refresh</h3>
-      <p>One button in the notebook toolbar that redraws the whole screen and clears ghosting.</p></a>
+      <p>One button in the notebook toolbar and the library sidebar that redraws the whole screen and clears ghosting.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-hwr-db"><h3>rmpp-hwr-db<span class="tag">CC BY 4.0</span></h3>
       <p>An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.</p></a>
     <a class="card" href="https://github.com/lorancecall/rmpp-studio"><h3>rmpp-studio</h3>
@@ -79,7 +80,7 @@
     <div><h3>Your language isn't on the keyboard yet?</h3>
       <p>rmpp-lang adds keyboards and fonts one language at a time. Ask for yours with an issue, or add it yourself
         with a pull request: the source is free to use. Every new language must be tested on a real Paper Pro, with
-        screenshots made with <a href="https://github.com/lorancecall/rmpp-studio">rmpp-studio</a>.</p></div>
+        screenshots made with <a href="https://github.com/lorancecall/rmpp-studio">rmpp-studio</a>. Please write requests in English.</p></div>
     <div class="cta">
       <a class="btn" href="https://github.com/lorancecall/rmpp-lang/issues/new?template=language-request.yml">Request a language</a>
       <a class="btn" href="https://github.com/lorancecall/rmpp-lang/pulls">Send a pull request</a>
@@ -104,7 +105,7 @@
         Wi-Fi is turned on: <code>ssh root@10.11.99.1 rm-ssh-over-wlan on</code>.)</p></li>
     <li><h3>Run rmpp setup</h3>
       <p><a href="https://github.com/lorancecall/rmpp-packages/releases/latest">Download</a> the app for your system,
-        connect, tick what you want, and press <strong>Install</strong>. The Paper Pro's screen restarts once or twice.</p>
+        connect, tick what you want, and press <strong>Install ticked</strong>. The Paper Pro's screen restarts once or twice.</p>
       <p class="muted">The app is not signed: Windows shows “Windows protected your PC” (More info › Run anyway), and
         macOS asks you to allow it in System Settings › Privacy &amp; Security. Prefer a terminal? Use the
         <a href="https://github.com/lorancecall/rmpp-packages#install">install scripts</a>. Each add-on's own page
@@ -120,7 +121,7 @@
   <p class="sub">A personal project, shared as is.</p>
   <div class="terms">
     <div><h3>Personal</h3><p>Code I tuned for my own reMarkable Paper Pro, packaged with <a href="https://github.com/vellum-dev/vellum">Vellum</a> only to keep it in one place.</p></div>
-    <div><h3>Not official</h3><p>I don't plan to submit these to Vellum's main repository or other package indexes myself.</p></div>
+    <div><h3>Not official</h3><p>Not an official repository, and I don't plan to submit these to Vellum's main repository or other package indexes.</p></div>
     <div><h3>Take it</h3><p>Found something useful? Move it to another repository or package manager, no need to ask. Keep the license (GPL-3.0).</p></div>
     <div><h3>Good to know</h3><p>Made for and tested on the reMarkable Paper Pro with OS 3.29. Other models are not supported. Updates for newer OS versions may take some time to follow. Issues are welcome; fixes may take some time.</p></div>
   </div>
