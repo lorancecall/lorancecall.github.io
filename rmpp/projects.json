@@ -13,18 +13,18 @@
       "tree_ko": "언어별 키보드와 폰트를 애드온으로. 한국어, 일본어, 중국어, 러시아어, ..."
     },
     "rmpp-hwr": {
-      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into movable, editable ink text, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.",
-      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라 옮기고 고칠 수 있는 잉크 글씨로, 또는 페이지 통째로. 한국어, 영어, 중국어, 일본어, 라틴 문자 언어.",
-      "tree_en": "On-device handwriting recognition: lasso to typed text or movable ink text (Korean, English, Chinese, Japanese, Latin), with tools to train a personal model.",
-      "tree_ko": "기기 안에서 도는 필기 인식. 올가미로 텍스트나 옮길 수 있는 잉크 글씨로 (한국어, 영어, 중국어, 일본어, 라틴). 내 손글씨로 맞춤 모델 학습까지."
+      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into typed text or a text object you can move and edit, or convert a page. Korean, English, Chinese, Japanese, Latin-script languages.",
+      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라 텍스트나 옮기고 고칠 수 있는 텍스트 객체로, 또는 페이지 통째로. 한국어, 영어, 중국어, 일본어, 라틴 문자 언어.",
+      "tree_en": "On-device handwriting recognition: lasso to typed text or a text object (Korean, English, Chinese, Japanese, Latin), with tools to train a personal model.",
+      "tree_ko": "기기 안에서 도는 손글씨 인식. 올가미로 텍스트나 텍스트 객체로 (한국어, 영어, 중국어, 일본어, 라틴). 내 손글씨로 맞춤 모델 학습까지."
     },
     "rmpp-hwr-db": {
       "parent": "rmpp-hwr",
       "tag": "CC BY 4.0",
       "card_en": "An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.",
       "card_ko": "Paper Pro로 쓴 공개 손글씨 데이터셋. 내 언어의 손글씨로 참여 가능.",
-      "tree_en": "Open Korean/English/digit handwriting dataset with pen strokes.",
-      "tree_ko": "펜 스트로크까지 담은 한글·영어·숫자 필기 데이터셋. 공개."
+      "tree_en": "Open handwriting dataset of pen strokes written on the Paper Pro (Korean and English so far).",
+      "tree_ko": "Paper Pro로 쓴 손글씨를 펜 획 그대로 모은 공개 데이터셋 (지금은 한국어와 영어)."
     },
     "rmpp-textobj": {
       "card_en": "Text objects: type text that is drawn as pen strokes, then select, move, edit and erase it like ink. Add text object in the T menu; rmpp-hwr can also turn handwriting into text objects.",
