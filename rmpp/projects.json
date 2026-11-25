@@ -13,16 +13,16 @@
       "tree_ko": "언어별 키보드와 폰트를 애드온으로. 한국어, 일본어, 중국어, 러시아어, ..."
     },
     "rmpp-hwr": {
-      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into typed text, or convert a page. Works with rmpp-textobj's text objects too. Korean is fine-tuned on handwriting; English, Chinese, Japanese and Latin-script languages use base models until rmpp-hwr-db has handwriting to train on.",
-      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라서, 또는 페이지 통째로. rmpp-textobj의 텍스트 객체와도 호환. 한국어는 손글씨로 파인튜닝된 모델, 영어, 중국어, 일본어, 라틴 문자 언어는 rmpp-hwr-db에 손글씨가 모일 때까지 기본 모델.",
-      "tree_en": "On-device handwriting recognition: lasso to typed text, works with text objects (Korean fine-tuned; English, Chinese, Japanese, Latin base models), with tools to train a personal model.",
-      "tree_ko": "기기 안에서 도는 손글씨 인식. 올가미로 텍스트로, 텍스트 객체와도 호환 (한국어는 파인튜닝, 영어, 중국어, 일본어, 라틴은 기본 모델). 내 손글씨로 맞춤 모델 학습까지."
+      "card_en": "Handwriting to text, on the Paper Pro: lasso a few lines into typed text, or convert a page. Works with rmpp-textobj's text objects too. Korean is fine-tuned on a still small handwriting set and improves with every writer; English, Chinese, Japanese and Latin-script languages use base models until rmpp-hwr-db has their handwriting. Every language needs writers.",
+      "card_ko": "Paper Pro 안에서 손글씨를 텍스트로. 몇 줄만 올가미로 골라서, 또는 페이지 통째로. rmpp-textobj의 텍스트 객체와도 호환. 한국어는 아직 적은 손글씨로 파인튜닝되어 참여자가 늘수록 좋아지고, 영어, 중국어, 일본어, 라틴 문자 언어는 rmpp-hwr-db에 손글씨가 모일 때까지 기본 모델. 모든 언어에 손글씨 기여가 필요합니다.",
+      "tree_en": "On-device handwriting recognition: lasso to typed text, works with text objects (Korean fine-tuned on a small set so far; English, Chinese, Japanese, Latin base models), with tools to train a personal model.",
+      "tree_ko": "기기 안에서 도는 손글씨 인식. 올가미로 텍스트로, 텍스트 객체와도 호환 (한국어는 아직 적은 데이터로 파인튜닝, 영어, 중국어, 일본어, 라틴은 기본 모델). 내 손글씨로 맞춤 모델 학습까지."
     },
     "rmpp-hwr-db": {
       "parent": "rmpp-hwr",
       "tag": "CC BY 4.0",
-      "card_en": "An open handwriting dataset written on the Paper Pro. Add your own handwriting in your language.",
-      "card_ko": "Paper Pro로 쓴 공개 손글씨 데이터셋. 내 언어의 손글씨로 참여 가능.",
+      "card_en": "An open handwriting dataset written on the Paper Pro. Every language needs writers, Korean included: add your handwriting.",
+      "card_ko": "Paper Pro로 쓴 공개 손글씨 데이터셋. 한국어를 포함해 모든 언어에 참여자가 필요합니다.",
       "tree_en": "Open handwriting dataset of pen strokes written on the Paper Pro (Korean and English so far).",
       "tree_ko": "Paper Pro로 쓴 손글씨를 펜 획 그대로 모은 공개 데이터셋 (지금은 한국어와 영어)."
     },
